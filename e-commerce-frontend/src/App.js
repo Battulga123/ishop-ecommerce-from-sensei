@@ -3,6 +3,7 @@ import React from "react";
 
 import { Link, Routes, Route } from "react-router-dom";
 import Signup from "./components/Signup";
+import Signin from "./components/Signin";
 import Home from "./components/Home";
 import CallService from "./components/CallService";
 import MainMenu from "./components/MainMenu";
@@ -42,6 +43,7 @@ function App() {
             }
           ></Route>
           <Route path="/signup" element={<Signup />}></Route>
+          <Route path="/sigin" element={<Signin />}></Route>
           <Route path="/search" element={<SearchResult />} />
           <Route
             path="/productDetails/:id"
